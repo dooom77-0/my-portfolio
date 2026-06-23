@@ -3,10 +3,10 @@
 import { useState } from "react";
 
 const navItems = [
-  { label: "الرئيسية", href: "#home" },
-  { label: "المشاريع", href: "#projects" },
-  { label: "المهارات", href: "#skills" },
-  { label: "التواصل", href: "#contact" },
+  { label: "Home", href: "#home" },
+  { label: "Projects", href: "#projects" },
+  { label: "Skills", href: "#skills" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export default function Header() {
