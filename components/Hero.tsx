@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 lg:px-16">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 lg:px-16">
       {/* الوهج الخلفي الملون اللي طالع في صورتك */}
       <div className="absolute top-1/4 left-10 w-87.5 h-87.5 bg-purple-900/20 rounded-full blur-[130px] pointer-events-none" />
       <div className="absolute bottom-1/4 right-10 w-100 h-100 bg-[#10B981]/10 rounded-full blur-[140px] pointer-events-none" />
