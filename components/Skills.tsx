@@ -2,32 +2,58 @@
 
 import React from "react";
 import { motion, Variants } from "framer-motion";
-import { Smartphone, MonitorPlay, BrainCircuit, BotMessageSquare } from "lucide-react";
+import {
+  Smartphone,
+  MonitorPlay,
+  BrainCircuit,
+  Code2,
+} from "lucide-react";
 
 // تعريف فئات المهارات بناءً على تصميم الصورة (Categories Data Structure)
 const skillsData = [
   {
     category: "MOBILE DEV",
     icon: Smartphone, // 👈 أيقونة معبرة من Lucide
-    color: "from-emerald-400 to-emerald-600",
+    color: "text-emerald-600",
     glow: "shadow-[0_0_50px_-8px_rgba(52,211,153,0.35)]", // توهج أخضر
-    skills: ["React Native", "Expo", "Kotlin", "Native APIs", "Mobile UI/UX"],
+    skills: [
+      "React Native",
+      "Expo",
+      "MMKV",
+      "Native APIs",
+      "Mobile UI/UX",
+      "Expo Navigation",
+    ],
     desc: "Building cross-platform apps with elegant, responsive design.",
   },
   {
     category: "WEB DEV",
     icon: MonitorPlay,
-    color: "from-purple-400 to-purple-600",
+    color: "text-purple-600",
     glow: "shadow-[0_0_50px_-8px_rgba(168,85,247,0.35)]", // توهج بنفسجي
-    skills: ["Next.js / React", "Tailwind CSS", "JavaScript (ES6+)", "Headless CMS", "Backend Physics"],
+    skills: [
+      "Next.js / React",
+      "Tailwind CSS",
+      "JavaScript (ES6+)",
+      "Headless CMS",
+      "Framer motion",
+      "React hooks",
+    ],
     desc: "Developing interactive, user-focused web interfaces.",
   },
   {
-    category: "LOGIC & BACKEND",
+    category: "LOGIC & BACKEND \n (soon)",
     icon: BrainCircuit, // 👈 أنسب أيقونة تمثل المنطق وقواعد البيانات
-    color: "from-teal-400 to-teal-600",
+    color: "text-teal-600",
     glow: "shadow-[0_0_50px_-8px_rgba(45,212,191,0.35)]", // توهج فيروزي
-    skills: ["TypeScript", "REST APIs", "Node.js", "Problem Solving", "Database Architecture"],
+    skills: [
+      "TypeScript",
+      "REST APIs",
+      "Node.js",
+      "Problem Solving",
+      "MongoDB",
+      "express.js",
+    ],
     desc: "Architecting scalable and secure backend systems with smart code.",
   },
 ];
@@ -55,16 +81,19 @@ export default function SkillsSection() {
     >
       {/* خلفية الشبكة الهندسية الفخمة */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1f293708_1px,transparent_1px),linear-gradient(to_bottom,#1f293708_1px,transparent_1px)] bg-size[:4rem_4rem] z-0" />
-      
+
       <div className="max-w-7xl mx-auto relative z-10">
-        
         {/* عنوان القسم */}
         <div className="text-center mb-20">
           <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight">
-            Featured <span className="text-gray-200">Skills</span>
+            <span className="bg-clip-text text-transparent bg-linear-to-r from-emerald-400 to-purple-500">
+              Featured
+            </span>{" "}
+            skills
           </h2>
           <p className="text-gray-400 mt-5 max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
-            Crafting modern, balanced digital experiences across multiple platforms.
+            Crafting modern, balanced digital experiences across multiple
+            platforms.
           </p>
         </div>
 
@@ -84,8 +113,12 @@ export default function SkillsSection() {
               >
                 {/* الجزء العلوي: الأيقونة والعنوان */}
                 <div className="flex items-center gap-5 mb-8">
-                  <div className={`p-4 rounded-2xl bg-white/3 border border-white/5`}>
-                    <IconComponent className={`w-10 h-10 bg-clip-text bg-linear-to-b ${category.color}`} />
+                  <div
+                    className={`p-4 rounded-2xl bg-white/3 border border-white/5`}
+                  >
+                    <IconComponent
+                      className={`w-10 h-10 bg-clip-text  ${category.color}`}
+                    />
                   </div>
                   <h3 className="text-2xl font-bold tracking-tight text-white uppercase">
                     {category.category}
@@ -110,8 +143,12 @@ export default function SkillsSection() {
                     {category.desc}
                   </p>
                   <div className="flex items-center gap-2 text-xs text-neutral-600 font-mono">
-                     <BotMessageSquare size={13} className="text-neutral-700"/>
-                     <span>Physics & Code</span>
+                    <Code2 size={13} className="text-neutral-500" />
+                    <span className=" text-purple-700 animate-pulse">
+                      PHYSICS
+                    </span>
+                    <span className="text-neutral-500 animate-pulse">&</span>
+                    <span className="text-emerald-700 animate-pulse">CODE</span>
                   </div>
                 </div>
               </motion.div>
