@@ -47,7 +47,7 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "تطبيق الوصفات (Magadeer)",
+    title: "مقادير (Magadeer)",
     tech: ["React Native Expo", "Tailwind CSS", "TheMealDB API"],
     desc: "An international recipe explorer displaying hundreds of global dishes with ingredients and step-by-step cooking guides.",
     icon: Utensils,
@@ -63,7 +63,7 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "تطبيق العادات (DevLearn)",
+    title: "مطور معرفي (DevLearn)",
     tech: ["React Native Expo", "Tailwind CSS", "React Native MMKV"],
     desc: "A simple, smart app to track your daily goals and habits, featuring interactive stats to keep your streak going (scalable).",
     icon: Hourglass,

@@ -28,7 +28,7 @@ export default function Hero() {
       <div className="absolute bottom-1/4 right-10 w-100 h-100 bg-[#10B981]/10 rounded-full blur-[140px] pointer-events-none" />
 
       {/* تقسيم الشاشة إلى عمودين (Grid) لمنع التكديس بالمنتصف */}
-      <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10 text-left">
+      <div className="max-w-7xl w-full mx-auto my-32 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10 text-left">
         {/* العمود اليسار: النصوص حق التعريف مع أنيميشن الدخول */}
         <div className="space-y-6">
           {/* 1. الشارة العلوية */}
@@ -48,7 +48,7 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             custom={1} // العنصر الثاني
-            className="text-5xl lg:text-6xl font-bold text-white leading-tight"
+            className="text-5xl md:text-7xl lg:text-6xl font-bold text-white leading-tight"
           >
             I am{" "}
             <span className="text-transparent bg-clip-text bg-linear-to-r from-[#10B981] to-purple-500">
@@ -87,7 +87,7 @@ export default function Hero() {
             {/* الزر الثانوي */}
             <a 
             href="#Contact"
-            className="px-8 py-3.5 rounded-xl bg-white/3 hover:bg-white/[0.07] font-semibold text-gray-300 hover:text-white text-md tracking-wide border border-white/10 hover:border-white/25 backdrop-blur-md shadow-sm hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 w-full  sm:w-auto">
+            className="px-8 py-3.5 rounded-xl bg-white/3 hover:bg-white/[0.07] font-semibold text-gray-300 hover:text-white text-md tracking-wide border border-white/10 hover:border-white/25 backdrop-blur-md shadow-sm hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 w-full text-center md:text-center  sm:w-auto">
               Contact Me
             </a>
           </motion.div>
