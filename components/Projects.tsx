@@ -2,7 +2,7 @@
 
 import React from "react";
 // استيراد مكتبة التحريك والـ Variants لمنع أخطاء الـ TypeScript
-import { motion, Variants } from "framer-motion"; 
+import { motion, Variants } from "framer-motion";
 import {
   BookOpen,
   Scroll,
@@ -15,31 +15,35 @@ import {
 const projectsData = [
   {
     id: 1,
-    title: "عارض الآيات (Ayah Viewer)",
+    title: "تدبر (Tadabbor)",
     tech: ["JS", "CSS", "Quran API"],
-    desc: "A simple website that displays a random Quranic verse with a link to its interpretation.",
+    desc: "A modern web application designed for deep reflection, displaying randomized Quranic verses with direct access to their authentic interpretations (Tafseer).",
     icon: BookOpen,
-    glowColor: "group-hover:text-purple-400 group-hover:shadow-[0_0_30px_rgba(168,85,247,0.4)] group-hover:border-purple-500/40",
+    glowColor:
+      "group-hover:text-purple-400 group-hover:shadow-[0_0_30px_rgba(168,85,247,0.4)] group-hover:border-purple-500/40",
     iconBg: "bg-purple-500/10 border-purple-500/20 text-purple-400",
-    cardHover: "hover:border-purple-500/30 hover:shadow-[0_0_50px_-12px_rgba(168,85,247,0.2)]",
+    cardHover:
+      "hover:border-purple-500/30 hover:shadow-[0_0_50px_-12px_rgba(168,85,247,0.2)]",
     liveLink: "https://random-ayat-d7.pages.dev/",
     githubLink: "https://github.com/dooom77-0/Quran-App",
     isFeatured: true,
-    isApp: false 
+    isApp: false,
   },
   {
     id: 2,
-    title: "موقع السُّنّة (Sunnah App)",
+    title: "السيرة و النور (Sunnah & Light)",
     tech: ["React", "Tailwind CSS", "JSON"],
-    desc: "A web app that allows users to view different hadiths with their meanings (expandable).",
+    desc: "An interactive platform dedicated to exploring prophetic traditions, allowing users to browse, search, and understand verified Hadiths and their meanings (expandable).",
     icon: Scroll,
-    glowColor: "group-hover:text-purple-400 group-hover:shadow-[0_0_30px_rgba(168,85,247,0.4)] group-hover:border-purple-500/40",
+    glowColor:
+      "group-hover:text-purple-400 group-hover:shadow-[0_0_30px_rgba(168,85,247,0.4)] group-hover:border-purple-500/40",
     iconBg: "bg-purple-500/10 border-purple-500/20 text-purple-400",
-    cardHover: "hover:border-purple-500/30 hover:shadow-[0_0_50px_-12px_rgba(168,85,247,0.2)]",
+    cardHover:
+      "hover:border-purple-500/30 hover:shadow-[0_0_50px_-12px_rgba(168,85,247,0.2)]",
     liveLink: "https://sunnah-app-d7.pages.dev/",
     githubLink: "https://github.com/dooom77-0/Sunnah-App",
     isFeatured: false,
-    isApp: false 
+    isApp: false,
   },
   {
     id: 3,
@@ -47,13 +51,15 @@ const projectsData = [
     tech: ["React Native Expo", "Tailwind CSS", "TheMealDB API"],
     desc: "An international recipe explorer displaying hundreds of global dishes with ingredients and step-by-step cooking guides.",
     icon: Utensils,
-    glowColor: "group-hover:text-emerald-400 group-hover:shadow-[0_0_30px_rgba(52,211,153,0.4)] group-hover:border-emerald-500/40",
+    glowColor:
+      "group-hover:text-emerald-400 group-hover:shadow-[0_0_30px_rgba(52,211,153,0.4)] group-hover:border-emerald-500/40",
     iconBg: "bg-emerald-500/10 border-emerald-500/20 text-emerald-400",
-    cardHover: "hover:border-emerald-500/30 hover:shadow-[0_0_50px_-12px_rgba(52,211,153,0.2)]",
+    cardHover:
+      "hover:border-emerald-500/30 hover:shadow-[0_0_50px_-12px_rgba(52,211,153,0.2)]",
     liveLink: "/Magadeer.apk",
     githubLink: "https://github.com/dooom77-0/Recipe-App",
     isFeatured: false,
-    isApp: true 
+    isApp: true,
   },
   {
     id: 4,
@@ -61,13 +67,15 @@ const projectsData = [
     tech: ["React Native Expo", "Tailwind CSS", "React Native MMKV"],
     desc: "A simple, smart app to track your daily goals and habits, featuring interactive stats to keep your streak going (scalable).",
     icon: Hourglass,
-    glowColor: "group-hover:text-emerald-400 group-hover:shadow-[0_0_30px_rgba(52,211,153,0.4)] group-hover:border-emerald-500/40",
+    glowColor:
+      "group-hover:text-emerald-400 group-hover:shadow-[0_0_30px_rgba(52,211,153,0.4)] group-hover:border-emerald-500/40",
     iconBg: "bg-emerald-500/10 border-emerald-500/20 text-emerald-400",
-    cardHover: "hover:border-emerald-500/30 hover:shadow-[0_0_50px_-12px_rgba(52,211,153,0.2)]",
+    cardHover:
+      "hover:border-emerald-500/30 hover:shadow-[0_0_50px_-12px_rgba(52,211,153,0.2)]",
     liveLink: "/DevLearn.apk",
     githubLink: "https://github.com/dooom77-0/Shift-Planner",
     isFeatured: true,
-    isApp: true 
+    isApp: true,
   },
 ];
 
@@ -98,9 +106,8 @@ export default function ProjectsSection() {
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-emerald-500/5 rounded-full blur-[150px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto relative z-10">
-        
         {/* أنيميشن ناعم للعنوان الرئيسي بمجرد التمرير */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -117,7 +124,8 @@ export default function ProjectsSection() {
             className="text-gray-400 mt-4 max-w-xl mx-auto text-sm sm:text-base"
             dir="ltr"
           >
-            Here are some of the projects I have worked on.
+            A curated collection of digital experiences crafted to blend modern
+            development with meaningful concepts.{" "}
           </p>
         </motion.div>
 
@@ -178,7 +186,7 @@ export default function ProjectsSection() {
                     download={project.isApp}
                     target={project.isApp ? undefined : "_blank"}
                     rel={project.isApp ? undefined : "noopener noreferrer"}
-                    className="flex-1 flex items-center justify-center gap-2 text-center text-xs font-bold py-3 px-4 rounded-xl bg-white text-neutral-950 hover:bg-gray-200 transition-all duration-300"
+                    className="flex-1 flex items-center justify-center gap-2 text-center text-xs font-bold py-3 px-4 rounded-xl bg-gray-200 text-neutral-950 hover:bg-gray-400 transition-all duration-300"
                   >
                     <ExternalLink size={14} />
                     <span>{project.isApp ? "Download APK" : "Live Demo"}</span>
