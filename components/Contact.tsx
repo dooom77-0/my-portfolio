@@ -34,7 +34,7 @@ const contactChannels = [
   {
     icon: SiGithub,
     label: "GitHub Repositories",
-    value: "https://github.com/Abdulrahman-25Dev", // حسابك البرمجي الجديد
+    value: "My GitHub account", // حسابك البرمجي الجديد
     href: "https://github.com/Abdulrahman-25Dev",
     color: "text-neutral-200",
     bgGlow: "group-hover:bg-white/5",

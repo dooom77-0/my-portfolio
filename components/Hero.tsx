@@ -79,7 +79,7 @@ export default function Hero() {
             {/* الزر الرئيسي */}
             <button 
             
-            className="relative group px-8 py-3.5 rounded-xl bg-linear-to-r from-emerald-500 via-purple-500 to-purple-600 text-white font-semibold text-md tracking-wide shadow-lg shadow-purple-500/15 hover:shadow-emerald-500/20 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 w-full sm:w-auto overflow-hidden">
+            className="relative group px-8 py-3.5 rounded-xl bg-linear-to-r from-emerald-600 to-purple-600 text-white font-semibold text-md tracking-wide shadow-lg shadow-purple-500/15 hover:shadow-emerald-500/20 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 w-full sm:w-auto overflow-hidden">
               <span className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               View Projects
             </button>
@@ -87,7 +87,7 @@ export default function Hero() {
             {/* الزر الثانوي */}
             <a 
             href="#Contact"
-            className="px-8 py-3.5 rounded-xl bg-white/3 hover:bg-white/[0.07] text-gray-300 hover:text-white font-medium text-md tracking-wide border border-white/10 hover:border-white/25 backdrop-blur-md shadow-sm hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 w-full  sm:w-auto">
+            className="px-8 py-3.5 rounded-xl bg-white/3 hover:bg-white/[0.07] font-semibold text-gray-300 hover:text-white text-md tracking-wide border border-white/10 hover:border-white/25 backdrop-blur-md shadow-sm hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 w-full  sm:w-auto">
               Contact Me
             </a>
           </motion.div>
