@@ -82,7 +82,7 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
             
-            className="relative group px-8 py-3.5 rounded-xl bg-linear-to-r from-emerald-600 to-purple-600 text-white font-semibold text-md tracking-wide shadow-lg shadow-purple-500/15 hover:shadow-emerald-500/20 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 w-full sm:w-auto overflow-hidden">
+            className="relative group px-8 py-3.5 rounded-xl bg-linear-to-r from-emerald-600 to-purple-600 text-white font-semibold text-md tracking-wide shadow-lg shadow-purple-500/15 hover:shadow-emerald-500/20 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 w-full text-center sm:w-auto overflow-hidden">
               <span className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               View Projects
             </a>
