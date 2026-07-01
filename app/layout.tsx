@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   description: "Showcasing my projects and skills",
   icons: {
     icon: "/portfolioIcon.png",
-    shortcut: "/portfolioIcon.png",
+    shortcut: "/portfolioIcon.ico",
     apple: "/portfolioIcon.png",
   }
 };
